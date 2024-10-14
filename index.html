@@ -23,8 +23,9 @@
         </header>
         <nav>
             <h1>Índice</h1>
+            <h2>Funcionamiento de los sitios web</h2>
             <ul>
-                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#modelo_de_internet_de_cuatro_capas">Modelo de Internet de cuatro capas</a></li>
             </ul>
             <h2>HTML</h2>
             <ul>
@@ -33,12 +34,32 @@
             </ul>
         </nav>
         <section>
-            <article id="introduccion">
-                <h1>Introducción</h1>
-                <p>La web fue inventada por Tim Berners Lee en la decada del 90.</p>
-                <p>Actualmente tenemos HTML, CSS y JavaScript para trabajar el desarrollo de un sitio web.</p>
+            <article id="modelo_de_internet_de_cuatro_capas">
+                <h1>Modelo de Internet de cuatro capas</h1>
+                <p>[1]<img src="./imagenes/tcp.png"></p>
+                <p>Las cuatro capas del modelo TCP/IP son [2]:
+                <ul>
+                    <li>La capa de aplicación. Esta capa combina las capas de aplicación, presentación y sesión del
+                        modelo OSI. La capa de aplicación proporciona protocolos específicos de la aplicación para
+                        servicios como la navegación web (HTTP), el correo electrónico (SMTP) y las transferencias de
+                        archivos (FTP). Los servicios DNS también operan en la capa de aplicación.</li>
+                    <li>La capa de transporte. Esta capa se corresponde con la capa de transporte del modelo OSI y
+                        gestiona los servicios de comunicación, incluida la transmisión fiable a través del protocolo de
+                        control de transmisión (TCP) o la entrega de datagramas sin conexión a través del protocolo de
+                        datagramas de usuario (UDP).</li>
+                    <li>La capa de Internet. Esta capa es equivalente a la capa de red en el modelo OSI y es responsable
+                        del direccionamiento, el enrutamiento y la gestión de la fragmentación de los paquetes IP.
+                        Además del protocolo de Internet (IP), ARP, IGMP e ICMP también operan en esta capa.</li>
+                    <li>La capa de acceso a la red. Esta capa se correlaciona con las capas física y de enlace de datos
+                        del modelo OSI y se encarga de la transmisión de datagramas de red a través de redes físicas
+                        específicas.</li>
+                </ul>
+                </p>
+                <p>Fuentes: [<a
+                        href="http://cidecame.uaeh.edu.mx/lcc/mapa/PROYECTO/libro35/144_capas_con_modelos_tcpip_y_osi.html">1</a>,
+                    <a href="https://www.akamai.com/es/glossary/what-are-network-layers">2</a>].
+                </p>
             </article>
-
             <article id="html">
                 <h1>HTML</h1>
                 <p>HTML en inglés <i>Hypertext Markup Language</i> o en español <i>Lenguaje de Marcas de Hipertexto</i>,
@@ -54,7 +75,7 @@
                         Code</a>, entre otros.</p>
                 <p>La extensión del archivo debe ser ".html".</p>
                 <p>El archivo HTML tiene el siguiente formato básico:</p>
-<pre><code>
+                <pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -66,7 +87,8 @@
 </code></pre>
                 <p>El archivo inicia con la etiqueta <strong>!DOCTYPE</strong> que indica que se trata de un archivo
                     HTML5.</p>
-                <p>Luego viene la etiqueta <strong>html</strong> que indica donde inicia y donde termina el archivo html.
+                <p>Luego viene la etiqueta <strong>html</strong> que indica donde inicia y donde termina el archivo
+                    html.
                 </p>
                 <p>Dentro de <strong>html</strong> tenemos <strong>head</strong> y <strong>body</strong>.</p>
                 <p>La etiqueta <strong>head</strong> contiene el título de la página en la etiqueta

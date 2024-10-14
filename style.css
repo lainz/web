@@ -61,3 +61,7 @@ body {
 .pie p {
     text-align: center;
 }
+
+img {
+    max-width: 80vw;
+}

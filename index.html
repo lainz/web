@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Referencia Web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="contenedor">
+        <header class="titulo">
+            <h1>Referencia Web</h1>
+            <p><i>por</i> Leandro Diaz</p>
+        </header>
+        <nav>
+            <h1>Índice</h1>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+            </ul>
+            <h2>HTML</h2>
+            <ul>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#html_estructura">HTML - Estructura básica del archivo</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article id="introduccion">
+                <h1>Introducción</h1>
+                <p>La web fue inventada por Tim Berners Lee en la decada del 90.</p>
+                <p>Actualmente tenemos HTML, CSS y JavaScript para trabajar el desarrollo de un sitio web.</p>
+            </article>
+
+            <article id="html">
+                <h1>HTML</h1>
+                <p>HTML en inglés <i>Hypertext Markup Language</i> o en español <i>Lenguaje de Marcas de Hipertexto</i>,
+                    es el
+                    lenguaje que se utiliza para mostrar el contenido de la web. Consiste de etiquetas que indican al
+                    navegador que mostrar.</p>
+            </article>
+
+            <article id="html_estructura">
+                <h1>HTML - Estructura básica del archivo</h1>
+                <p>HTML es texto, por lo que se puede crear con el bloc de notas o con <a
+                        href="https://code.visualstudio.com/">Visual Studio
+                        Code</a>, entre otros.</p>
+                <p>La extensión del archivo debe ser ".html".</p>
+                <p>El archivo HTML tiene el siguiente formato básico:</p>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Mi sitio web&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;/html&gt;             
+</code></pre>
+                <p>El archivo inicia con la etiqueta <strong>!DOCTYPE</strong> que indica que se trata de un archivo
+                    HTML5.</p>
+                <p>Luego viene la etiqueta <strong>html</strong> que indica donde incia y donde termina el archivo html.
+                </p>
+                <p>Dentro de <strong>html</strong> tenemos <strong>head</strong> y <strong>body</strong>.</p>
+                <p>La etiqueta <strong>head</strong> contiene el título de la página en la etiqueta
+                    <strong>title</strong>.
+                </p>
+                <p>La etiqueta <strong>body</strong> contiene el cuerpo de nuestro archivo html, donde iran título,
+                    navegación, articulos, imágenes, tablas, etc.</p>
+            </article>
+        </section>
+        <footer class="pie">
+            <p>2024 por Leandro Diaz - lainz.github.io</p>
+        </footer>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -40,155 +40,188 @@
                     a una red. La sigla TCP/IP significa Protocolo de control de transmisión/Protocolo de Internet.
                     Proviene de los nombres de dos protocolos importantes incluidos en el conjunto TCP/IP, es decir, del
                     protocolo TCP y del protocolo IP.</p>
-                <ul>
-                    <li><strong>Capa 1</strong> o <strong>capa de acceso al medio</strong>. En la capa de enlace
-                        <strong>los protocolos solo actúan como máximo
-                            hasta la red local a la que está conectado un host cualquiera</strong>. Esto <strong>se
-                            denomina enlace si usamos
-                            el lenguaje propio de TCP/IP</strong>. Además <strong>esta capa se sitúa en la parte más
-                            baja</strong> de dicho modelo.
-                        Como dijimos esta capa <strong>tiene en cuenta todos los hosts accesibles en la red
-                            local</strong> o dicho de
-                        otra manera, todos los hosts que se pueden alcanzar sin tener que pasar por un enrutador. Este
-                        modelo está diseñado para que <strong>el tipo de hardware usado no importe</strong> haciendo que
-                        pueda
-                        <strong>implementarse sobre cualquier tecnología de la capa de enlace</strong>. De hecho incluye
-                        también capas de
-                        los posibles enlaces virtuales que puedan haber ya sea por redes privadas virtuales y túneles de
-                        redes.
+                <h2>Capa 1</h2>
+                <p><strong>Capa 1</strong> o <strong>capa de acceso al medio</strong>. En la capa de enlace
+                    <strong>los protocolos solo actúan como máximo
+                        hasta la red local a la que está conectado un host cualquiera</strong>. Esto <strong>se
+                        denomina enlace si usamos
+                        el lenguaje propio de TCP/IP</strong>. Además <strong>esta capa se sitúa en la parte más
+                        baja</strong> de dicho modelo.
+                    Como dijimos esta capa <strong>tiene en cuenta todos los hosts accesibles en la red
+                        local</strong> o dicho de
+                    otra manera, todos los hosts que se pueden alcanzar sin tener que pasar por un enrutador. Este
+                    modelo está diseñado para que <strong>el tipo de hardware usado no importe</strong> haciendo que
+                    pueda
+                    <strong>implementarse sobre cualquier tecnología de la capa de enlace</strong>. De hecho incluye
+                    también capas de
+                    los posibles enlaces virtuales que puedan haber ya sea por redes privadas virtuales y túneles de
+                    redes.
 
-                        El uso que tiene la capa de enlace es <strong>permitir el paso de paquetes entre las interfaces
-                            de la
-                            capa de Internet de dos hosts diferentes en el mismo enlace</strong>. Los procesos de
-                        <strong>transmisión y
-                            recepción de paquetes</strong> en el enlace <strong>se pueden controlar en el controlador de
-                            dispositivo para la
-                            tarjeta de red</strong>, incluso en el firmware o haciendo uso de conjuntos de chips
-                        especializados.
+                    El uso que tiene la capa de enlace es <strong>permitir el paso de paquetes entre las interfaces
+                        de la
+                        capa de Internet de dos hosts diferentes en el mismo enlace</strong>. Los procesos de
+                    <strong>transmisión y
+                        recepción de paquetes</strong> en el enlace <strong>se pueden controlar en el controlador de
+                        dispositivo para la
+                        tarjeta de red</strong>, incluso en el firmware o haciendo uso de conjuntos de chips
+                    especializados.
 
-                        El modelo TCP/IP incluye especificaciones para traducir los métodos de direccionamiento
-                        de red
-                        utilizados en el Protocolo de Internet a direcciones de capa de enlace, como
-                        direcciones de
-                        control de acceso al medio (o direcciones MAC).
+                    El modelo TCP/IP incluye especificaciones para traducir los métodos de direccionamiento
+                    de red
+                    utilizados en el Protocolo de Internet a direcciones de capa de enlace, como
+                    direcciones de
+                    control de acceso al medio (o direcciones MAC).
+                    <br>
+                    <br>
+                    <strong>Resumen capa 1:</strong> Un host es un dispositivo. La capa 1 Tiene en cuenta todos los
+                    dispositivos de la red local, pueden ser PC, teléfonos, televisores, etc. Permite el paso de
+                    paquetes entre la red local e Internet. Se hace uso de la placa de red.
+                </p>
+                <h2>Capa 2</h2>
+                <p><strong>Capa 2</strong> o <strong>capa de internet</strong>.
+                    El proceso de <strong>enviar datos desde la red de origen a la red de destino</strong> mediante
+                    <strong>la interconexión
+                        de redes es lo que se conoce como enrutamiento</strong> y esto es compatible con el
+                    direccionamiento e
+                    identificación del host mediante el sistema de direccionamiento IP jerárquico. La capa de
+                    internet permite una instalación de <strong>transmisión de datagramas</strong> (así es como se
+                    llama a la PDU en
+                    la capa de Internet) <strong>no confiable entre hosts ubicados en redes IP considerablemente
+                        diferentes</strong>
+                    al reenviar datagramas <strong>a un enrutador distinto</strong> (produciéndose lo que se conoce
+                    como salto)
+                    apropiado para su posterior retransmisión a su destino. <strong>La capa de Internet es
+                        responsable de
+                        enviar paquetes de datos a través de múltiples redes. De esta manera, la capa de Internet
+                        hace
+                        posible la interconexión, el funcionamiento interno de diferentes redes IP y es como
+                        Internet se
+                        establece.</strong>
 
-                        <strong>Resumen capa 1:</strong> Un host es un dispositivo. La capa 1 Tiene en cuenta todos los
-                        dispositivos de la red local, pueden ser PC, teléfonos, televisores, etc. Permite el paso de
-                        paquetes entre la red local e Internet. Se hace uso de la placa de red.
-                    </li>
-                    <li><strong>Capa 2</strong> o <strong>capa de internet</strong>.
-                        El proceso de <strong>enviar datos desde la red de origen a la red de destino</strong> mediante
-                        <strong>la interconexión
-                            de redes es lo que se conoce como enrutamiento</strong> y esto es compatible con el
-                        direccionamiento e
-                        identificación del host mediante el sistema de direccionamiento IP jerárquico. La capa de
-                        internet permite una instalación de <strong>transmisión de datagramas</strong> (así es como se
-                        llama a la PDU en
-                        la capa de Internet) <strong>no confiable entre hosts ubicados en redes IP considerablemente
-                            diferentes</strong>
-                        al reenviar datagramas <strong>a un enrutador distinto</strong> (produciéndose lo que se conoce
-                        como salto)
-                        apropiado para su posterior retransmisión a su destino. <strong>La capa de Internet es
-                            responsable de
-                            enviar paquetes de datos a través de múltiples redes. De esta manera, la capa de Internet
-                            hace
-                            posible la interconexión, el funcionamiento interno de diferentes redes IP y es como
-                            Internet se
-                            establece.</strong>
+                    La capa de Internet <strong>no distingue entre los distintos protocolos de la capa de
+                        transporte</strong>. IP
+                    transporta datos para que los protocolos de capas superiores se encarguen de tratarlos de la
+                    manera correcta, pues no entiende de otras capas.
 
-                        La capa de Internet <strong>no distingue entre los distintos protocolos de la capa de
-                            transporte</strong>. IP
-                        transporta datos para que los protocolos de capas superiores se encarguen de tratarlos de la
-                        manera correcta, pues no entiende de otras capas.
+                    El Protocolo de Internet es el componente principal de la capa de Internet y define dos sistemas
+                    de direccionamiento para identificar los hosts de la red y ubicarlos en la red. El sistema de
+                    direcciones original de ARPANET y su sucesor, Internet, es <strong>el Protocolo de Internet
+                        versión 4
+                        (IPv4) la cual utiliza una dirección IP de 32 bits y, por lo tanto, es capaz de identificar
+                        aproximadamente cuatro mil millones de hosts</strong>. <strong>Esta limitación fue eliminada
+                        en 1998 por la
+                        estandarización del Protocolo de Internet versión 6 (IPv6) que usa direcciones de 128
+                        bits</strong>. Las
+                    implementaciones de producción de IPv6 surgieron aproximadamente en 2006.
+                    <br>
+                    <br>
+                    <strong>Resumen capa 2:</strong> La capa 2 debe enviar datos desde la red de origen a la red de
+                    destino. Por ejemplo una pagina web desde un servidor a una PC en el hogar. La interconexión de
+                    redes se llama enrutamiento. Se transmiten datagramas que son pequeñas porciones de datos. La
+                    interconexión de redes es Internet. Hay protocolo de Internet IPv4 (con una limitación en la
+                    cantidad de dispositivos que se pueden conectar a Internet) y también protocolo de Internet IPv6
+                    (que elimina esa limitación).
+                </p>
+                <h2>Capa 3</h2>
+                <p><strong>Capa 3</strong> o <strong>capa de transporte</strong>.
+                    En la capa de transporte <strong>se establecen canales de datos básicos utilizadas para hacer
+                        posible el
+                        intercambio de datos</strong>. Además <strong>establece la conectividad de host a host en
+                        forma de servicios de
+                        transferencia de mensajes de extremo a extremo independientes de las redes subyacentes e
+                        independientes de la estructura de los datos del usuario y la logística del intercambio de
+                        información</strong>.
 
-                        El Protocolo de Internet es el componente principal de la capa de Internet y define dos sistemas
-                        de direccionamiento para identificar los hosts de la red y ubicarlos en la red. El sistema de
-                        direcciones original de ARPANET y su sucesor, Internet, es <strong>el Protocolo de Internet
-                            versión 4
-                            (IPv4) la cual utiliza una dirección IP de 32 bits y, por lo tanto, es capaz de identificar
-                            aproximadamente cuatro mil millones de hosts</strong>. <strong>Esta limitación fue eliminada
-                            en 1998 por la
-                            estandarización del Protocolo de Internet versión 6 (IPv6) que usa direcciones de 128
-                            bits</strong>. Las
-                        implementaciones de producción de IPv6 surgieron aproximadamente en 2006.
-                        <strong>Resumen capa 2:</strong> La capa 2 debe enviar datos desde la red de origen a la red de
-                        destino. Por ejemplo una pagina web desde un servidor a una PC en el hogar. La interconexión de
-                        redes se llama enrutamiento. Se transmiten datagramas que son pequeñas porciones de datos. La
-                        interconexión de redes es Internet. Hay protocolo de Internet IPv4 (con una limitación en la
-                        cantidad de dispositivos que se pueden conectar a Internet) y también protocolo de Internet IPv6
-                        (que elimina esa limitación).
-                    </li>
-                    <li><strong>Capa 3</strong> o <strong>capa de transporte</strong>.
-                        En la capa de transporte <strong>se establecen canales de datos básicos utilizadas para hacer
-                            posible el
-                            intercambio de datos</strong>. Además <strong>establece la conectividad de host a host en
-                            forma de servicios de
-                            transferencia de mensajes de extremo a extremo independientes de las redes subyacentes e
-                            independientes de la estructura de los datos del usuario y la logística del intercambio de
-                            información</strong>.
+                    La capa de transporte tiene <strong>2 tipos de conexiones</strong> y son <strong>orientada a la
+                        conexión como es el TCP</strong>,
+                    o <strong>no orientado a la conexión como es el UDP</strong>. Los protocolos de esta capa pueden
+                    proporcionar
+                    control de errores, segmentación, control de flujo, control de congestión y direccionamiento de
+                    aplicaciones.
 
-                        La capa de transporte tiene <strong>2 tipos de conexiones</strong> y son <strong>orientada a la
-                            conexión como es el TCP</strong>,
-                        o <strong>no orientado a la conexión como es el UDP</strong>. Los protocolos de esta capa pueden
-                        proporcionar
-                        control de errores, segmentación, control de flujo, control de congestión y direccionamiento de
-                        aplicaciones.
+                    Con el objetivo de proporcionar canales de transmisión específicos, <strong>la capa de
+                        transporte
+                        establece el concepto de puerto de red</strong>. Esto es una construcción lógica numerada y
+                    que es
+                    asignada de forma específica para cada uno de los canales de comunicación que necesita una
+                    determinada aplicación. Para muchos tipos de servicios, <strong>estos números de puerto se han
+                        estandarizado</strong> para que las computadoras cliente puedan abordar servicios
+                    específicos de una
+                    computadora servidor sin la participación de servicios de directorio o descubrimiento de
+                    servicios.
 
-                        Con el objetivo de proporcionar canales de transmisión específicos, <strong>la capa de
-                            transporte
-                            establece el concepto de puerto de red</strong>. Esto es una construcción lógica numerada y
-                        que es
-                        asignada de forma específica para cada uno de los canales de comunicación que necesita una
-                        determinada aplicación. Para muchos tipos de servicios, <strong>estos números de puerto se han
-                            estandarizado</strong> para que las computadoras cliente puedan abordar servicios específicos de una
-                        computadora servidor sin la participación de servicios de directorio o descubrimiento de
-                        servicios.
+                    <strong>TCP es un protocolo orientado a la conexión que aborda numerosos problemas de
+                        confiabilidad al
+                        proporcionar un flujo de bytes confiable</strong>:
 
-                        <strong>TCP es un protocolo orientado a la conexión que aborda numerosos problemas de confiabilidad al
-                            proporcionar un flujo de bytes confiable</strong>:
-
-                        Los <strong>datos llegan ordenados</strong>.
-                        Los <strong>datos tienen la cantidad mínima de errores</strong>.
-                        <strong>No llegan duplicados</strong>.
-                        Se <strong>asegura que los paquetes llegan a su destino</strong>.
-                        Incluye <strong>control de congestión de tráfico</strong>.
-                        El <strong>Protocolo de datagramas de usuario (UDP) es un protocolo de datagramas no orientado a
-                            conexión</strong>. Al igual que IP, es un <strong>protocolo poco confiable</strong>. La confiabilidad se aborda mediante
-                        la detección de errores mediante un algoritmo de checksum. <strong>UDP se usa generalmente para
-                            aplicaciones como transmisión de medios (audio, video, voz sobre IP, etc.) donde la llegada a
-                            tiempo es más importante que la confiabilidad</strong>, o para aplicaciones simples de consulta /
-                        respuesta como búsquedas de DNS. El Protocolo de transporte en tiempo real (RTP) es un protocolo
-                        de datagramas que se utiliza sobre UDP y está diseñado para datos en tiempo real, como medios de
-                        transmisión.</li>
-                        <strong>Resumen capa 3:</strong> La capa 3 establece los protocolos TCP y UDP para la transmisión de datos entre dispositivos. Algunos de los puertos estándar son el 80 para http y 443 para https. TCP es mas seguro y orientado a la conexión. UDP es mas rápido y orientado a la transmisión de medios.
-                    <li>Capa 4 o capa de aplicación.
-                        La capa de aplicación incluye los protocolos utilizados por la mayoría de las aplicaciones para
+                    Los <strong>datos llegan ordenados</strong>.
+                    Los <strong>datos tienen la cantidad mínima de errores</strong>.
+                    <strong>No llegan duplicados</strong>.
+                    Se <strong>asegura que los paquetes llegan a su destino</strong>.
+                    Incluye <strong>control de congestión de tráfico</strong>.
+                    El <strong>Protocolo de datagramas de usuario (UDP) es un protocolo de datagramas no orientado a
+                        conexión</strong>. Al igual que IP, es un <strong>protocolo poco confiable</strong>. La
+                    confiabilidad se aborda mediante
+                    la detección de errores mediante un algoritmo de checksum. <strong>UDP se usa generalmente para
+                        aplicaciones como transmisión de medios (audio, video, voz sobre IP, etc.) donde la llegada
+                        a
+                        tiempo es más importante que la confiabilidad</strong>, o para aplicaciones simples de
+                    consulta /
+                    respuesta como búsquedas de DNS. El Protocolo de transporte en tiempo real (RTP) es un protocolo
+                    de datagramas que se utiliza sobre UDP y está diseñado para datos en tiempo real, como medios de
+                    transmisión. <br>
+                    <br>
+                    <strong>Resumen capa 3:</strong> La capa 3 establece los protocolos TCP y UDP para la
+                    transmisión de
+                    datos entre dispositivos. Algunos de los puertos estándar son el 80 para http y 443 para https.
+                    TCP
+                    es mas seguro y orientado a la conexión. UDP es mas rápido y orientado a la transmisión de
+                    medios.
+                </p>
+                <h2>Capa 4</h2>
+                <p><strong>Capa 4</strong> o <strong>capa de aplicación</strong>.
+                    La capa de aplicación incluye <strong>los protocolos utilizados por la mayoría de las
+                        aplicaciones para
                         proporcionar servicios de usuario o intercambiar datos de aplicaciones a través de las
-                        conexiones de red establecidas por los protocolos de las capas inferiores. Esto puede incluir
-                        algunos servicios básicos de soporte de red, como protocolos de enrutamiento y configuración de
-                        host. Algunos ejemplos de lo que acabamos de comentar son el protocolo HTTP o Protocolo de
+                        conexiones de red establecidas por los protocolos de las capas inferiores</strong>. Esto
+                    puede incluir
+                    algunos servicios básicos de soporte de red, como protocolos de enrutamiento y configuración de
+                    host. Algunos ejemplos de lo que acabamos de comentar son el <strong>protocolo HTTP o Protocolo
+                        de
                         Transferencia de Hipertexto, el protocolo FTP o Protocolo de Transferencia de Archivos, el
                         protocolo SMTP o protocolo de Transferencia de Correo y el Protocolo DHCP o Protocolo de
-                        Configuración Dinámica de Host. Los datos codificados de acuerdo con los protocolos de la capa
-                        de aplicación se encapsulan en unidades de protocolo de la capa de transporte (como flujos TCP o
+                        Configuración Dinámica de Host</strong>. <strong>Los datos codificados de acuerdo con los
+                        protocolos de la capa
+                        de aplicación se encapsulan en unidades de protocolo de la capa de transporte (como flujos
+                        TCP o
                         datagramas UDP), que a su vez utilizan protocolos de capas inferiores para efectuar la
-                        transferencia de datos real.
+                        transferencia de datos real.</strong>
 
-                        La capa de aplicación en el modelo TCP/IP corresponde a una combinación de la quinta (sesión),
-                        sexta (presentación) y séptima capa (aplicación) del modelo OSI.
+                    La capa de aplicación en el modelo TCP/IP corresponde a una combinación de la quinta (sesión),
+                    sexta (presentación) y séptima capa (aplicación) del modelo OSI.
 
-                        En la capa de aplicación, el modelo TCP/IP distingue entre protocolos de usuario y protocolos de
-                        soporte. Los protocolos de soporte brindan servicios a un sistema de infraestructura de red. Los
-                        protocolos de usuario se utilizan para aplicaciones de usuario reales. Por ejemplo, FTP es un
-                        protocolo de usuario y DNS es un protocolo de soporte.
+                    En la capa de aplicación, el modelo TCP/IP distingue entre protocolos de usuario y protocolos de
+                    soporte. <strong>Los protocolos de soporte brindan servicios a un sistema de infraestructura de
+                        red</strong>. <strong>Los
+                        protocolos de usuario se utilizan para aplicaciones de usuario reales</strong>. Por ejemplo,
+                    <strong>FTP es un
+                        protocolo de usuario y DNS es un protocolo de soporte</strong>.
 
-                        La capa de transporte y las capas de nivel inferior no se preocupan por los detalles de los
-                        protocolos de la capa de aplicación. Los enrutadores y conmutadores proporcionan un camino que
-                        los datos tomarán para llegar de un sistema final a otro sistema final (los extremos) y
-                        normalmente no examinan el tráfico encapsulado. Sin embargo, algunas aplicaciones de cortafuegos
-                        y de limitación del ancho de banda utilizan la inspección profunda de paquetes para interpretar
-                        los datos de la aplicación.</li>
-                </ul>
+                    <strong>La capa de transporte y las capas de nivel inferior no se preocupan por los detalles de
+                        los
+                        protocolos de la capa de aplicación</strong>. Los <strong>enrutadores y conmutadores
+                        proporcionan un camino que
+                        los datos tomarán para llegar de un sistema final a otro sistema final (los
+                        extremos)</strong> y
+                    normalmente no examinan el tráfico encapsulado. Sin embargo, algunas aplicaciones de cortafuegos
+                    y de limitación del ancho de banda utilizan la inspección profunda de paquetes para interpretar
+                    los datos de la aplicación.
+                    <br>
+                    <br>
+                    <strong>Resumen capa 4:</strong> La capa 4 son los protocolos utilizados por las aplicaciones.
+                    Pueden ser para el
+                    usuario o para la red. Ejemplo: HTTP (Protocolo de Transferencia de Hipertexto). Los datos de la
+                    capa de aplicación se envian mediante las capas inferiores. Se envían de extremo a extremo.
                 </p>
             </article>
             <article id="html">

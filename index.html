@@ -27,6 +27,7 @@
             <ul>
                 <li><a href="#modelo_de_internet_de_cuatro_capas">Modelo de Internet de cuatro capas</a></li>
                 <li><a href="#protocolo_http">Protocolo HTTP</a></li>
+                <li><a href="#direccionamiento_ip">Direccionamiento IP</a></li>
             </ul>
             <h2>HTML</h2>
             <ul>
@@ -375,6 +376,145 @@
                 Todavía hoy se sigue investigando y desarrollando para conseguir un protocolo de transporte más
                 conveniente para el HTTP. Por ejemplo, Google está experimentado con QUIC, que se apoya en el protocolo
                 UDP y presenta mejoras en la fiabilidad y eficiencia de la comunicación.
+            </article>
+
+            <article id="direccionamiento_ip">
+                <h1>Direccionamiento IP</h1>
+                <p>¿Qué es una dirección IP y cómo funciona?</p>
+                <p>Las direcciones IP son las anclas de Internet. Le conectan a la red mundial y apuntalan toda su vida
+                    digital. De hecho, es imposible conectarse en línea sin una IP.</p>
+                <p>¿Qué es una dirección IP?</p>
+                <p>Una dirección IP (dirección de protocolo de Internet) es una serie de números asignados a cada
+                    dispositivo conectado a una red informática o a Internet. Las direcciones IP identifican y
+                    diferencian
+                    los miles de millones de dispositivos en línea, incluidos los ordenadores y los teléfonos móviles, y
+                    ayudan a esos dispositivos a comunicarse entre sí.</p>
+
+                <p>Otros dispositivos conectados a Internet, incluidas las impresoras y un número cada vez mayor de
+                    dispositivos del Internet de las cosas (IoT) como altavoces inteligentes, frigoríficos, sistemas de
+                    vigilancia doméstica, etc., también tienen direcciones IP.</p>
+
+
+                <p>Con las direcciones IP se garantiza que los datos transmitidos se dirigen hacia la ubicación
+                    adecuada.
+                    De la misma manera que es necesaria una dirección postal para recibir y enviar cartas por correo,
+                    los
+                    dispositivos conectados a Internet requieren una dirección digital para recibir y enviar datos.</p>
+
+                <p>¿Qué se puede hacer con una dirección IP?</p>
+                <p>Prácticamente todo en línea. Las direcciones IP le conectan
+                    a
+                    los sitios web que visite, a los correos electrónicos que abra y a los vídeos que mire. Todas estas
+                    actividades relacionadas con Internet se consideran «solicitudes de datos» y requieren una dirección
+                    IP.
+                    El equipo y el servicio de Internet no podrían funcionar sin direcciones IP.</p>
+
+                <p>Análisis de las direcciones IP</p>
+                <p>Las direcciones IP suelen consistir en cuatro números del 0 al 255, separados por puntos. Dentro de
+                    cada
+                    dirección IP, puede ver el ID de red, asignado a su red por su ISP, y el ID de host, el
+                    identificador
+                    único asignado a cada dispositivo conectado a esa red específica.</p>
+
+                <p>Veámoslo más de cerca y desglosémoslo. Este es un ejemplo de dirección IP:</p>
+
+                <p>172.16.254.1</p>
+
+                <p>No hace falta que cada uno de los cuatro números de una dirección IP sea un número de tres dígitos
+                    completo. En el ejemplo anterior, el primer número es el 172, el segundo es el 16, el tercero es el
+                    254
+                    y el cuatro es el 1. Conjuntamente, este formato de decimales con puntos se denomina un número de 32
+                    bits.</p>
+
+                <p>Piense en una dirección IP como una serie de números y puntos con una función similar a la dirección
+                    de
+                    una calle, para que el dispositivo pueda enviar y recibir datos de Internet.</p>
+
+                <p>Este es otro ejemplo de dirección IP:</p>
+
+                <p>2001:db8:0:1234:0:567:8:1</p>
+
+                <p>Este segundo ejemplo es un poco más complejo: es lo que se conoce como una dirección IPv6. ¿Por qué
+                    hay
+                    distintos tipos de direcciones IP y por qué la configuración de las direcciones IP varía tanto?
+                    Revisaremos los distintos tipos de direcciones IP y los orígenes de IPv4 e IPv6 un poco más
+                    adelante.
+                    Pero primero, examinemos los dos componentes clave de una dirección IP: el ID de red y el ID de
+                    host.</p>
+
+                <p>El ID de red y el ID de host</p>
+                <p>El ID de red es la parte de una dirección IP con la que se identifica la red que se está utilizando
+                    para
+                    conectarse a Internet («172.16.254» en el primer ejemplo anterior). El ID de red lo asigna un
+                    proveedor
+                    de servicios de Internet (ISP, por sus siglas en inglés) en el caso de conexiones domésticas a
+                    través de
+                    un router inalámbrico, por una red de empresa cuando la conexión se efectúa en el lugar de trabajo o
+                    por
+                    una red pública si la conexión se lleva a cabo en una cafetería Starbucks, por ejemplo.</p>
+
+                <p>Una red puede ser tan pequeña como dos ordenadores conectados entre sí o tan grande como Internet en
+                    sí.
+                    Internet es una red. Es una red de redes.</p>
+
+                <p>La parte del ID de host de una dirección IP indica el dispositivo concreto que está usando para
+                    conectarse a su red (es el «1» al final en el primer ejemplo anterior). Por ejemplo, en casa tiene
+                    una
+                    serie de dispositivos y todos ellos requieren una dirección IP para conectarse a Internet. La
+                    configuración de estas direcciones IP podría parecerse al caso siguiente:</p>
+
+                <p>Nombre del dispositivo: ID de red.ID de host</p>
+                <p>Portátil 1: 172.16.254.1</p>
+                <p>Portátil 2: 172.16.254.2</p>
+                <p>Sobremesa: 172.16.254.3</p>
+                <p>Smartphone: 172.16.254.4</p>
+                <p>Altavoz inteligente: 172.16.254.5</p>
+
+                <p>Para cada host (dispositivo) de una red, la parte de red de la dirección IP es la misma, mientras que
+                    el
+                    último número es distinto para identificar cada host. Un host tiene únicamente una dirección IP; una
+                    red
+                    tiene muchas.</p>
+
+                <p>El ID de red en combinación con el ID de host crea la dirección IP. Conjuntamente, esta secuencia de
+                    caracteres alfanuméricos le permite acceder a Internet.</p>
+
+                <p>Las direcciones IP de los dispositivos conectados a una red incluyen una parte de red que es la misma
+                    para todos los dispositivos de la misma red y una parte de host que es única para cada
+                    dispositivo.Ejemplo de dirección IP de varios dispositivos conectados a la misma red.</p>
+
+                <p>Funcionamiento de las direcciones IP</p>
+                <p>Las direcciones IP funcionan como identificadores únicos para cada dispositivo conectado en línea,
+                    como
+                    una dirección de correo postal. En lugar de recibir correo físico, con las direcciones IP se
+                    garantiza
+                    la recepción de los datos solicitados, como resultados de búsqueda, sitios web y correos
+                    electrónicos.</p>
+
+                <p>Para comprender cómo funcionan las direcciones IP, primero debemos fijarnos en la definición básica
+                    de
+                    Internet. Internet es una red mundial de ordenadores cuyo funcionamiento está basado en protocolos o
+                    reglas. Estas reglas definen cómo se transmiten los datos entre dispositivos electrónicos. Es decir,
+                    los
+                    protocolos determinan cómo se comunican los ordenadores en una red.</p>
+
+                <p>Cuando se solicita algo en línea, Internet «sabe» dónde enviar esa solicitud gracias a la dirección
+                    IP.
+                    Al teclear una consulta de búsqueda en Google, como «Qué es una dirección IP», Internet recupera
+                    esos
+                    datos y se los envía al
+                    dispositivo.</p>
+
+                <p>Todo esto ocurre instantáneamente.</p>
+
+                <p>¿Por qué necesitamos direcciones IP?
+                    Los ordenadores necesitan direcciones IP para comunicarse con otros dispositivos y redes en línea.
+                    El
+                    propósito de las direcciones IP es mapear la web y enviar datos al lugar adecuado. Sin esta
+                    dirección de
+                    protocolo fundamental entre dispositivos y redes, Internet no sería capaz de atender las solicitudes
+                    de
+                    datos de los usuarios.</p>
             </article>
 
             <article id="html">
